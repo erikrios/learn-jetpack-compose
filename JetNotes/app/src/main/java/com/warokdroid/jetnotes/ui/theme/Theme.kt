@@ -65,7 +65,7 @@ fun JetNotesTheme(
         }
     }
 
-    val isDarkThemeEnabled = isSystemInDarkTheme() || JetNotesThemeSettings.isDarkThemeEnabled
+    val isDarkThemeEnabled = JetNotesThemeSettings.isDarkThemeEnabled
     val colors = if (isDarkThemeEnabled) DarkColorScheme else LightColorScheme
 
     MaterialTheme(
